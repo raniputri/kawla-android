@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Kawla</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Strategic Management</string>
+    <string name="slide_1_desc">Realizing economic activity by having positive impact and managing negative impact</string>
+
+    <string name="slide_2_title">Sustainbility Management</string>
+    <string name="slide_2_desc">Contributing positively to society and the environment</string>
+
+    <string name="slide_3_title">Social Brand</string>
+    <string name="slide_3_desc">Enhance the recognition of corporate stakeholders on the realization of value</string>
+
+    <string name="slide_4_title">Sustainable Communication</string>
+    <string name="slide_4_desc">Improve good relationship between organization or companies with their stakeholders</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>
