@@ -16,14 +16,14 @@ public class PrefManager {
     int PRIVATE_MODE = 0;
 
     // Shared preferences file name
-    private static final String PREF_NAME = "kawla-welcome";
+    private static final String PREF_NAME = "pref-welcome";
 
-    private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
+    private static final String IS_FIRST_TIME_LAUNCH = "first";
 
     public PrefManager(Context context) {
         this._context = context;
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
-        editor = pref.edit();
+       editor = pref.edit();
     }
 
     public void setFirstTimeLaunch(boolean isFirstTime){
@@ -32,6 +32,6 @@ public class PrefManager {
     }
 
     public boolean isFirstTimeLaunch(){
-        return pref.getBoolean(IS_FIRST_TIME_LAUNCH, false);
+        return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
 }
