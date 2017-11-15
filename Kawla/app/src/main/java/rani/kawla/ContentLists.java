@@ -25,8 +25,10 @@ public class ContentLists extends AppCompatActivity {
         setContentView(R.layout.activity_content_lists);
         ListView chl=(ListView) findViewById(R.id.checkable_list);
         chl.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        String[] items={"Teknologi","Lingkungan","Energi Terbarukan","Elektronik","Makanan dan Minuman","Mainan","Media","Otomotif","Pertambangan",
-                "Pertanian","Hiburan","Pemasaran"};
+        String[] items={"Asuransi","Bioteknologi","Elektronik","Farmasi","Firma Akuntansi","Ikan","Jamu","Jasa",
+                "Jasa Keuangan","Kayu","Kimia","Logam","Logistik","Mainan","Makanan","Manufaktur","Media","Militer","Minuman",
+        "Minyak","Otomotif","Penerbit","Pertambangan","Pertanian",};
+
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.item_row, R.id.txt_lan, items);
         chl.setAdapter(adapter);
         chl.setOnItemClickListener(new AdapterView.OnItemClickListener() {
