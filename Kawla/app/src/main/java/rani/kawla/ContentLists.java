@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.Activity;
 import android.app.ListActivity;
+import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,9 @@ public class ContentLists extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_lists);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setLogo(R.drawable.iconkawla);
         ListView chl=(ListView) findViewById(R.id.checkable_list);
         chl.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         String[] items={"Asuransi","Bioteknologi","Elektronik","Farmasi","Firma Akuntansi","Ikan","Jamu","Jasa",
