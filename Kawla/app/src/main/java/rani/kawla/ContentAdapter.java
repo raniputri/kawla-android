@@ -15,7 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
-public class ContentAdapter  RecyclerView.Adapter<AlbumsAdapter.MyViewHolder> {
+import com.bumptech.glide.Glide;
+public class ContentAdapter extends   RecyclerView.Adapter<ContentAdapter.MyViewHolder> {
 
     private Context mContext;
     private List<ContentFiles> contentFiles;
@@ -33,7 +34,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     }
 }
 
-    public AlbumsAdapter(Context mContext, List<ContentFiles> contentFiles) {
+    public ContentAdapter(Context mContext, List<ContentFiles> contentFiles) {
         this.mContext = mContext;
         this.contentFiles = contentFiles;
     }
