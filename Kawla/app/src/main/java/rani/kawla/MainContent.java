@@ -35,11 +35,14 @@ public class MainContent extends AppCompatActivity {
         initCollapsingToolbar();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
+
+
         contentFiles = new ArrayList<>();
         adapter = new ContentAdapter(this, contentFiles);
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_margin);
+        recyclerView.addItemDecoration(new GridSpacing(2, spacingInPixels, true, 0));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
