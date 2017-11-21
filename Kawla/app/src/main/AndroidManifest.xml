@@ -16,12 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity android:name=".ContentLists" />
-        <activity android:name=".MainContent"></activity>
+        <activity android:name=".NewsActivity"></activity>
     </application>
 
 </manifest>
